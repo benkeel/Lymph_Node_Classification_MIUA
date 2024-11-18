@@ -15,6 +15,9 @@ pip install -r requirements.txt
 │   ├── Image_Data_Extraction.ipynb
 │   └── Preprocess_Dataset.ipynb
 │
+├── Results
+│   └── error_analysis.png
+│
 ├── VAE-MLP
 │   └── models
 │       ├── MLP_model.py
