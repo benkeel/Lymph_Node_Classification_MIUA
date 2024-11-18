@@ -1,9 +1,8 @@
 # VAE-MLP_CVPR
 Official implementation of CVPR paper: Interpretable prediction of lymph node metastasis using variational autoencoders on rectal cancer MRI for patients without neo-adjuvant treatment
 
-### To run this code with your own data you can get the environment using:
+### To initalise the environment:
 pip install -r requirements.txt
-
 
 
 
