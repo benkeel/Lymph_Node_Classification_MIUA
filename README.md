@@ -39,7 +39,7 @@ pip install -r requirements.txt
 │       ├── train_and_test_functions.py
 │       └── utility_code.py
 │
-├── requirements.txt
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
