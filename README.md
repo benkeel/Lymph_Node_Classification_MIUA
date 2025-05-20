@@ -1,5 +1,5 @@
-# VAE-MLP_CVPR
-Official implementation of CVPR paper: Interpretable prediction of lymph node metastasis using variational autoencoders on rectal cancer MRI for patients without neo-adjuvant treatment
+#Lymph_Node_Classification_MIUA
+Official implementation of MIUA paper: Interpretable prediction of lymph node metastasis in rectal cancer MRI using variational autoencoders
 
 ## To initalise the environment:
 pip install -r requirements.txt
