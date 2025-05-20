@@ -1,4 +1,4 @@
-#Lymph_Node_Classification_MIUA
+# Lymph_Node_Classification_MIUA
 Official implementation of MIUA paper: Interpretable prediction of lymph node metastasis in rectal cancer MRI using variational autoencoders
 
 ## To initalise the environment:
