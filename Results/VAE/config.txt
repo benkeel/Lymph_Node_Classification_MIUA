@@ -1,0 +1,12 @@
+Learning Rate: 3.398900367275696e-05
+828 ====> Epoch 200
+829 Train Loss: KLD + Recon =: 0.196709 + 0.000022 = 0.1967 Beta Train Loss: KLD + Recon + SSIM =: 0.095531 + 0.039185 + 0.455995 = 0.5907 SSIM Score: 0.795452
+830 Test Loss: KLD + Recon =: 0.491671 + 0.000057 = 0.4917 Beta Test Loss: KLD + Recon + SSIM =: 0.238780 + 0.103003 + 1.153883 = 1.4957 SSIM Score: 0.788633
+831 Learning Rate: 3.398900367275696e-05
+832 Hyperparameters: {'base': 20, 'latent_size': 20, 'annealing': 1, 'ssim_indicator': 1, 'alpha': 0.4, 'beta': 1, 'lr': 0.0005438240587641114, 'batch_size': 1536, 'ssim_scalar': 3, 'recon_scale_factor': 4500, 'weight_decay': 0.05351113195778387, 'accumulation_steps': 2}
+833 Latent vector size 400
+834 Mean Squared Error 0.0021449142508208753
+835 Mean Absolute Error 0.03290991798043251
+836 Mean SSIM 0.7884775018692016
+837 Number of latent vectors 37232
+838 Time to train: 3820.027905800147
