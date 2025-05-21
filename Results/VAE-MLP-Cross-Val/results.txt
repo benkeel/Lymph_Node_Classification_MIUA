@@ -1,0 +1,44 @@
+# Cross Validation
+# fold 0
+MLP_path = r"C:\Users\mm17b2k.DS\Documents\Python\ARCANE_Results\VAE_MLP_cross_validation\MLP_Results\MLP_Results_sweep1\MLP_Fold_0_Run_2.pt"
+fold0 = {'AUC': 0.9423,'Accuracy': 0.8824,'Sensitivity': 0.875,'Specificity': 0.8846,'Balanced Accuracy': 0.8798,'F1': 0.7778,'TP': 7,'FP': 3}
+
+# fold 1
+MLP_path = r"C:\Users\mm17b2k.DS\Documents\Python\ARCANE_Results\VAE_MLP_cross_validation\MLP_Results\MLP_Results_sweep1\MLP_Fold_1_Run_18.pt" 
+fold1 = {'AUC': 0.7981,'Accuracy': 0.8824,'Sensitivity': 0.625,'Specificity': 0.9615,'Balanced Accuracy': 0.79325,'F1': 0.7143,'TP': 5,'FP': 1},
+
+# fold 2
+MLP_path = r"C:\Users\mm17b2k.DS\Documents\Python\ARCANE_Results\VAE_MLP_cross_validation\MLP_Results\MLP_Results_sweep1\MLP_Fold_2_Run_23.pt"
+fold2 = {'AUC': 0.8846,'Accuracy': 0.8235,'Sensitivity': 0.75,'Specificity': 0.8462,'Balanced Accuracy': 0.7981,'F1': 0.6667,'TP': 6,'FP': 4},
+
+# fold 3 (not saved)
+fold3 = {'AUC': 0.8516, 'Accuracy': 0.8485, 'Sensitivity': 0.8571, 'Specificity': 0.8462, 'Balanced Accuracy': 0.8516, 'F1': 0.7523, 'TP': 6, 'FP': 4}
+
+# fold 4
+MLP_path = r"C:\Users\mm17b2k.DS\Documents\Python\ARCANE_Results\VAE_MLP_cross_validation\MLP_Results\MLP_Fold_4_Run_3.pt"
+fold4 = {'AUC': 0.7967, 'Accuracy': 0.7879, 'Sensitivity': 0.7143, 'Specificity': 0.8077, 'Balanced Accuracy': 0.761, 'F1': 0.5882, 'TP': 5, 'FP': 5}
+
+
+folds = [fold0, fold1, fold2, fold3, fold4]
+metrics = ['AUC', 'Accuracy', 'Sensitivity', 'Specificity', 'Balanced Accuracy', 'F1']
+avg_metrics = {}
+std_metrics = []
+for metric in metrics:
+    avg_metrics[metric] = np.mean([fold[metric] for fold in folds])
+    std_metrics.append(np.std([fold[metric] for fold in folds]))
+
+print('Average metrics across folds:')
+i = -1
+for metric, value in avg_metrics.items():
+    i+=1
+    print(f"{metric}: {value:.4f} ± {std_metrics[i]:.4f}")
+
+
+#Average metrics across folds:
+# Average metrics across folds:
+# AUC: 0.8575 ± 0.0511
+# Accuracy: 0.8332 ± 0.0486
+# Sensitivity: 0.7893 ± 0.0643
+# Specificity: 0.8462 ± 0.0544
+# Balanced Accuracy: 0.8177 ± 0.0489
+# F1: 0.6937 ± 0.0820
