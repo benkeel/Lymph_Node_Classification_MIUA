@@ -17,7 +17,7 @@ pip install -r requirements.txt
 │
 ├── Results
 │   └── error_analysis.png
-│   └── ... [model parameters, training graphs and VAE reconstructions]
+│   └── ... [model hyperparameters, training graphs and VAE reconstructions]
 │
 ├── VAE-MLP
 │   └── models
