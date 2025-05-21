@@ -1,0 +1,11 @@
+Epoch [42/200], Train: Loss: 0.4776, Accuracy: 0.8008, Balanced Accuracy: 0.7647, AUC: 0.7647, Sensitivity: 0.6275, Specificity: 0.9020
+Train Confusion Matrix:
+[[1970  214]
+ [ 475  800]]
+
+Test: Loss: 0.4989, Accuracy: 0.8644, Balanced Accuracy: 0.8855, AUC: 0.8855, Sensitivity: 0.9231, Specificity: 0.8478
+Test Confusion Matrix:
+[[39  7]
+ [ 1 12]]
+
+Hyperparameters:  {'num_epochs': 200, 'threshold': 0.5088509861498958, 'num_synthetic': 25, 'oversample': 2, 'batch_size': 100, 'lr': 0.006205665389659923, 'weight_decay': 0.11599239994284331, 'accumulation_steps': 4, 'patch_hidden_dim': 1536, 'patient_hidden_dim': 128, 'patch_dropout': 0.3, 'patient_dropout': 0.2, 'alpha': 0.8, 'mixup': True, 'attention_indicator': True, 'max_node_slices': 15, 'model_type': 'MLP_MIL_model2', 'clinical_data_options': ['T_stage', 'size', 'border'], 'device': device(type='cuda')}
