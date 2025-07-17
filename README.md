@@ -1,6 +1,10 @@
 # Lymph_Node_Classification_MIUA
 Official implementation of MIUA paper: Interpretable prediction of lymph node metastasis in rectal cancer MRI using variational autoencoders
 
+paper link: https://arxiv.org/abs/2507.11638
+and 
+https://doi.org/10.1007/978-3-031-98691-8_2
+
 ## To initalise the environment:
 pip install -r requirements.txt
 
